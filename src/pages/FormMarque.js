@@ -12,7 +12,6 @@ function FormMarque() {
 
   const handleSubmit = (e) => {
       e.preventDefault();
-
       axios.post('https://carsdealerwebservice-production-1aa2.up.railway.app/insertMarque', { nom })
           .then(response => {
               console.log('Marque insérée avec succès:', response.data);
