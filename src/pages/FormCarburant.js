@@ -9,7 +9,7 @@ function FormCarburant() {
   const [carburants, setCarburants] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/listCarburant')
+    axios.get('https://carsdealerwebservice-production-1aa2.up.railway.app/listCarburant')
       .then(response => {
         setCarburants(response.data);
       })
